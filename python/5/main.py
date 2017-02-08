@@ -4,5 +4,5 @@ def gcd(a, b):
         a,b = b, a%b
     return a
 
-gcdResult = reduce(lambda x,y: x//gcd(x,y) * y, range(1,20))
+gcdResult = reduce(lambda x,y: x//gcd(x,y) * y, range(1,20000))
 print(gcdResult)
